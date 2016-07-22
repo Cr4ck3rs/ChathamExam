@@ -1,0 +1,11 @@
+<div class="headers">
+  <div class="first-column"><h3>V</h3></div>
+  <div class="second-column"><h3>Day</h3></div>
+  <div class="third-column"><h3>Forecast</h3></div>
+</div>
+
+<ul>
+  <li data-ng-repeat="forecast in $ctrl.forecasts">
+    <forecast forecast="forecast" request="$ctrl.request"></forecast>
+  </li>
+</ul>

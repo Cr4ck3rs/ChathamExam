@@ -1,0 +1,35 @@
+<form name="$ctrl.queryForm"
+  data-ng-submit="$ctrl.queryForm.$valid && $ctrl.getForecasts($ctrl.request)"
+  novalidate>
+  <fieldset class="form-group first-group">
+    <h4>Provider</h4>
+    <select class="form-control"
+    ng-model="$ctrl.request.source"
+    ng-options="source.Id as source.Title for source in $ctrl.sources"></select>
+  </fieldset>
+  <fieldset class="form-group second-group">
+    <h4>Latitude</h4>
+    <input class="form-control" type="number"
+    placeholder="Latitude"
+    ng-model="$ctrl.request.latitude"
+    ng-pattern="/^-?[0-9]+([\.,][0-9]{1,4})?$/"
+    step="0.0001" required/>
+  </fieldset>
+  <fieldset class="form-group third-group">
+    <h4>Longitude</h4>
+    <input class="form-control" type="number"
+    placeholder="Longitude"
+    ng-model="$ctrl.request.longitude"
+    ng-pattern="/^-?[0-9]+([\.,][0-9]{1,4})?$/"
+    step="0.0001" required />
+  </fieldset>
+  <fieldset class="form-group fourth-group">
+    <h4>Prefer Centigrades</h4>
+    <input class="form-control" type="checkbox" ng-model="$ctrl.request.preferCentigrades" />
+  </fieldset>
+
+  <button class="btn btn-primary pull-right" type="submit">
+    <i class="glyphicon glyphicon-cloud"></i> Ask away!
+  </button>
+
+</form>

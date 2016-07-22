@@ -1,0 +1,68 @@
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+div.headers {
+  @include outer-container;
+
+  div.first-column {
+    @include span-columns(2 of 12);
+  }
+
+  div.second-column {
+    @include span-columns(4 of 12);
+  }
+
+  div.third-column {
+    @include span-columns(6 of 12);
+    @include omega();
+  }
+}
+
+ul {
+  @include outer-container;
+
+  li{
+    @include span-columns(12);
+    @include fill-parent();
+
+    forecast{
+      div.first-column{
+        @include span-columns(2 of 12);
+      }
+
+      div.second-column {
+        @include span-columns(4 of 12);
+      }
+
+      div.third-column {
+        @include span-columns(6 of 12);
+        @include omega();
+      }
+    }
+  }
+}
+
+form {
+  @include outer-container;
+
+  fieldset.first-group{
+    @include span-columns(3);
+  }
+
+  fieldset.second-group{
+    @include span-columns(3);
+  }
+
+  fieldset.third-group{
+    @include span-columns(3);
+  }
+
+  fieldset.fourth-group{
+    @include span-columns(3);
+    @include omega();
+  }
+}
+
+button{
+  display: block;
+  width: 100%;
+}

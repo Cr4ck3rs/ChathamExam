@@ -1,0 +1,6 @@
+<div class="first-column">
+  <skycon icon="$ctrl.forecast.iconElement" color="$ctrl.iconColor"></skycon>
+</div>
+<div class="second-column" ng-bind="$ctrl.forecast.dayName"></div>
+<div class="third-column" ng-bind="$ctrl.forecast.textForecastF" ng-hide="$ctrl.request.preferCentigrades"></div>
+<div class="third-column" ng-bind="$ctrl.forecast.textForecastC" ng-show="$ctrl.request.preferCentigrades"></div>
