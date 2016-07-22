@@ -17,7 +17,7 @@
 
 ## Description
 
-The solutions in this repo look to solve the following:
+The solutions in this repo solves the following:
 
 > We would like you to build a small webapp for a weather dashboard. Your Webapp would hook into 2-3 of the public APIs provided by services like Forecast.io, WeatherBug,WeatherUnderground, etc. for weather related data and display the current and 7-day weather forecast from these different sources.
 
