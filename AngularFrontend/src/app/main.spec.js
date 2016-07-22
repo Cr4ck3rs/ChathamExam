@@ -20,12 +20,12 @@ describe('main component', function () {
       return {};
     });
   }));
-  it('should render the header, title, techs and footer', angular.mock.inject(function ($rootScope, $compile) {
+  it('should render the header, title, weather and footer', angular.mock.inject(function ($rootScope, $compile) {
     var element = $compile('<app>Loading...</app>')($rootScope);
     $rootScope.$digest();
     expect(element.find('app-header').length).toEqual(1);
     expect(element.find('app-title').length).toEqual(1);
-    expect(element.find('app-techs').length).toEqual(1);
+    expect(element.find('app-weather').length).toEqual(1);
     expect(element.find('app-footer').length).toEqual(1);
   }));
 });

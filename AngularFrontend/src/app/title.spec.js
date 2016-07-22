@@ -10,6 +10,6 @@ describe('title component', function () {
     var element = $compile('<app-title></app-title>')($rootScope);
     $rootScope.$digest();
     var title = element.find('h1');
-    expect(title.html().trim()).toEqual('>Weather Api!');
+    expect(title.html().trim()).toEqual('Weather Api!');
   }));
 });
