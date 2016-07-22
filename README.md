@@ -50,7 +50,7 @@ Unit Tests for WeatherServices
 
 AngularJs App that consumes the WeatherServices WebApi and displays the dashboard.
 
-Created using the fountainjs generator.
+Base project created using the fountainjs generator.
 
 Uses bootstrap-sass for the styles, bourbon bitters for the normalization and neat for the grid framework.
 
@@ -113,4 +113,5 @@ For the AngularJs project you need:
 
 *  Increase Code Coverage in front and backend
 *  Stop mapping the icon implementation on the backend and create an angular filter on the frontend to handle the icon implementation
-*  Use breakpoints in the frontend to modify the grid on the mobile phone size
+*  Use breakpoints in the frontend to modify the grid on mobile phone sizes
+*  Move some parameters in the WebApi to the configuration file
